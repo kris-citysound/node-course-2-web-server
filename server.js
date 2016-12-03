@@ -48,6 +48,12 @@ app.get('/bad',function(req, res){
   });
 });
 
+app.get('/projects', function(req, res){
+  res.render('projects.hbs', {
+    pageTitle: 'Projects page'
+  });
+});
+
 
 app.listen(port, function(){
   console.log(`Listening on port ${port}`);
